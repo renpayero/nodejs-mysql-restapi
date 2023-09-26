@@ -1,6 +1,8 @@
 import express from 'express'
-import employeesRoutes from './routes/employees.routes.js'
-import indexRoutes from './routes/index.routes.js'
+import employeesRoutes from './employees.routes.js'
+import indexRoutes from './index.routes.js'
+
+import {PORT} from './config.js'
 
 
 const app = express()
@@ -15,7 +17,5 @@ app.use((req, res, next) => {
         message: 'Endpoint not found'
     })
 })
-app.listen(3000)
-console.log('server on port 3000')
 
-
+export default app
