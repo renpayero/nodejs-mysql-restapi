@@ -9,3 +9,10 @@ CREATE TABLE  employee (
 );
 
 DESCRIBE employee;
+
+insert into employee values
+(1, 'John', 10000),
+(2, 'David', 20000),
+(3, 'Mark', 30000),
+(4, 'James', 40000),
+(5, 'Paul', 50000);
